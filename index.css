@@ -10,3 +10,7 @@ svg {
     border: 3px solid green;
     padding: 60px 50px 60px 50px;
 }
+
+.bar:hover {
+  fill: aliceblue;
+}
