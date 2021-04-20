@@ -2,7 +2,7 @@ const URL = 'https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const w = 2000,
+    const w = 950,
         h = 500,
         padding = 30;
 
@@ -26,20 +26,27 @@ document.addEventListener('DOMContentLoaded', function () {
         // .domain([dataset[0][0], dataset[dataset.length - 1][0]])
         // .range(padding, w - padding)
 
+        // var xMax = new Date(d3.max(yearsDate));
+        // xMax.setMonth(xMax.getMonth() + 3);
+        // var xScale = d3
+        //   .scaleTime()
+        //   .domain([d3.min(yearsDate), xMax])
+        //   .range([0, width]);
+
 
         const yScale = d3.scaleLinear()
             .domain([0, dataset[dataset.length - 1][1]])
-            .range([h - padding, padding])
+            .range([h, 0])
 
         // create bars
         svg.selectAll('rect')
             .data(dataset)
             .enter()
             .append('rect')
-            .attr("x", (d, i) => i * 18)
-            .attr("y", (d, i) => h - (d[1]))
-            .attr("width", 15)
-            .attr("height", (d, i) => d[1]);
+            .attr("x", (d, i) => i * 4)
+            .attr("y", (d, i) =>  h - d[1]/40)
+            .attr("width", 3)
+            .attr("height", (d) => d[1]/40);
     };
 
 
