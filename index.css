@@ -1,13 +1,13 @@
 svg {
-    background-color: red;
+    background-color: silver;
 }
 
 #chart {
-    background-color: rgb(150, 139, 248);
+    background-color: rgb(112, 18, 18);
 
     margin: auto;
     width: 50%;
-    border: 3px solid green;
+    border: 3px solid rgb(128, 30, 0);
     padding: 60px 50px 60px 50px;
 }
 
