@@ -81,12 +81,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // ***************************************************
         //ADD TOOLTIP
-const tooltip = d3.select('#chart')
-.append('div')
-.attr('id', 'tooltip')
+// const tooltip = d3.select('#chart')
+// .append('div')
+// .attr('id', 'tooltip')
 // .style("position", "absolute")
-.style("visibility", "hidden")
-.text('Hello')
+// .style("visibility", "hidden")
+// .text('Hello')
 
 // d3.select("#tooltip")
 //   .on("mouseover", function(){return tooltip.style("visibility", "visible");})
